@@ -1,0 +1,20 @@
+NOTE: The code was developed on linux so some of the packages might not be compatible with windows
+
+      while creating the environment.
+
+
+Create environment from the .yml file before running the code/notebook
+
+	conda env create -f environment.yml
+
+After creating the environment activate the environment
+
+	conda activate cluster_tree_env
+
+If you plan to run the notebook install the kernel to use the packages in cluster_tree_env
+
+	python -m ipykernel install --user --name cluster_tree_env
+
+Lauch jupyter lab from the activate environment
+    
+    jupyter lab --port 8080
